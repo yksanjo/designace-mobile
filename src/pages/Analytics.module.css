@@ -1,0 +1,202 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+}
+
+.header {
+  margin-bottom: var(--space-xl);
+}
+
+.header h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.statIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 217, 255, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--accent-highlight);
+}
+
+.statContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.statLabel {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.section h2 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.categoryItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.categoryHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoryName {
+  font-weight: 500;
+}
+
+.categoryCount {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+}
+
+.progressBar {
+  height: 8px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--accent-highlight);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-slow);
+}
+
+.progressFill.easy {
+  background: var(--success);
+}
+
+.progressFill.medium {
+  background: var(--warning);
+}
+
+.progressFill.hard {
+  background: var(--error);
+}
+
+.difficultyList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.difficultyItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.difficultyHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.difficultyName {
+  font-weight: 500;
+}
+
+.difficultyStats {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+}
+
+.sessionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.sessionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) 0;
+  border-bottom: var(--border-accent);
+}
+
+.sessionItem:last-child {
+  border-bottom: none;
+}
+
+.sessionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.sessionTitle {
+  font-weight: 500;
+}
+
+.sessionDate {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.sessionScore {
+  display: flex;
+  align-items: center;
+}
+
+.scoreValue {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--accent-highlight);
+}
+
+.emptyText {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: var(--space-xl);
+}
+
+@media (max-width: 768px) {
+  .sections {
+    grid-template-columns: 1fr;
+  }
+}

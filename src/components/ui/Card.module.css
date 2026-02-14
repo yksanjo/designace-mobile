@@ -1,0 +1,18 @@
+.card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: var(--border-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  transition: all var(--transition-normal);
+}
+
+.hover:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-card);
+  border-color: rgba(0, 217, 255, 0.4);
+}
+
+.glow {
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.15);
+}
